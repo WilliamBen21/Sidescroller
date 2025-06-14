@@ -62,7 +62,7 @@ protected:
 
 	/** Multiplies the jump Z velocity for wall jumps. */
 	UPROPERTY(EditAnywhere, Category="Side Scrolling")
-	float WallJumpVerticalMultiplier = 1.4f;
+	float WallJumpVerticalMultiplier = 1.6f;
 
 	/** Collision object type to use for soft collision traces (dropping down floors) */
 	UPROPERTY(EditAnywhere, Category="Side Scrolling")
