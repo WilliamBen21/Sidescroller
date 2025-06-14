@@ -1,0 +1,11 @@
+# Will's Blueprints Folder
+
+This folder is reserved for Will's custom blueprints for the side-scrolling character variant.
+
+You can store:
+- Custom Blueprint classes based on the C++ character selection system
+- UI Blueprints for the character selection menu
+- Character-specific blueprints for the side-scrolling variant
+- Any other custom blueprints for the project
+
+This .gitkeep file ensures the folder is tracked by Git even when empty. 
