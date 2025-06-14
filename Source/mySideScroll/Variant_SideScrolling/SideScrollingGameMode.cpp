@@ -9,6 +9,7 @@
 #include "SideScrollingCharacter.h"
 #include "../Variant_Platforming/PlatformingCharacter.h"
 #include "../Variant_Combat/CombatCharacter.h"
+#include "../CustomSideScrollCharacter.h"
 #include "../MenuGameMode.h"
 #include "Engine/World.h"
 #include "GameFramework/PlayerStart.h"
@@ -16,6 +17,9 @@
 ASideScrollingGameMode::ASideScrollingGameMode()
 {
 	// Set default character classes - PURE C++ VERSION
+	// Use the new custom character as the default
+	DefaultPawnClass = ACustomSideScrollCharacter::StaticClass();
+	CustomSideScrollCharacterClass = ACustomSideScrollCharacter::StaticClass();
 	SideScrollingCharacterClass = ASideScrollingCharacter::StaticClass();
 	PlatformingCharacterClass = APlatformingCharacter::StaticClass();
 	CombatCharacterClass = ACombatCharacter::StaticClass();

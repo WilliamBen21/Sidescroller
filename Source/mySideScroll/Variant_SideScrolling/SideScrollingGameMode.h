@@ -11,6 +11,7 @@ class USideScrollingUI;
 class ASideScrollingCharacter;
 class APlatformingCharacter;
 class ACombatCharacter;
+class ACustomSideScrollCharacter;
 
 /**
  *  Enhanced Side Scrolling Game Mode
@@ -49,6 +50,10 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Characters")
 	TSubclassOf<ACombatCharacter> CombatCharacterClass;
+
+	/** Custom character class - new pure C++ character */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Characters")
+	TSubclassOf<ACustomSideScrollCharacter> CustomSideScrollCharacterClass;
 
 protected:
 
