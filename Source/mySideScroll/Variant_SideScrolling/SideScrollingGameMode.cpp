@@ -15,9 +15,10 @@
 
 ASideScrollingGameMode::ASideScrollingGameMode()
 {
-	// Set default character classes
+	// Set default character classes - PURE C++ VERSION
 	SideScrollingCharacterClass = ASideScrollingCharacter::StaticClass();
-	// Note: PlatformingCharacterClass and CombatCharacterClass should be set in Blueprint
+	PlatformingCharacterClass = APlatformingCharacter::StaticClass();
+	CombatCharacterClass = ACombatCharacter::StaticClass();
 }
 
 void ASideScrollingGameMode::BeginPlay()
